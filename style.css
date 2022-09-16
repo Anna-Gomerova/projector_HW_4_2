@@ -1,0 +1,291 @@
+/* @font-face {
+    font-family: Ogg;
+    src: url('./fonts/OggRegular.woff2') format('woff2'),
+    url('./fonts/OggRegular.woff') format('woff'),
+   url('./fonts/OggRegular.otf') format('otf'),
+   url('./fonts/OggRegular.ttf') format('ttf');
+   font-display: fallback;
+
+} */
+
+@font-face {
+    font-family: Ogg;
+    src: url('./fonts/OggLight.woff2') format('woff2'),
+        url('./fonts/OggLight.woff') format('woff'),
+        url('./fonts/OggLight.otf') format('otf'),
+        url('./fonts/OggLight.ttf') format('ttf');
+    font-weight: 300;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Ogg;
+    src: url('./fonts/OggMedium.woff2') format('woff2'),
+        url('./fonts/OggMedium.woff') format('woff'),
+        url('./fonts/OggMedium.otf') format('otf'),
+        url('./fonts/OggMedium.ttf') format('ttf');
+    font-weight: 500;
+    font-display: fallback;
+
+}
+
+@font-face {
+    font-family: Ogg;
+    src: url('./fonts/OggMediumItalic.woff2') format('woff2'),
+        url('./fonts/OggMediumItalic.woff') format('woff'),
+        url('./fonts/OggMediumItalic.otf') format('otf'),
+        url('./fonts/OggMediumItalic.ttf') format('ttf');
+    font-weight: 500;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT Extended';
+    src: url('./fonts/Trade\ Gothic\ LT\ Extended.woff2') format('woff2'),
+        url('./fonts/Trade\ Gothic\ LT\ Extended.woff') format('woff'),
+        url('./fonts/Trade\ Gothic\ LT\ Extended.otf') format('otf'),
+        url('./fonts/Trade\ Gothic\ LT\ Extended.ttf') format('ttf');
+    font-display: fallback;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'TradeGothic LT Extended', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+}
+
+h1 {
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Quattrocento', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 96px;
+    text-align: center;
+    line-height: 100px;
+    margin: 75px 0px;
+}
+
+h2 {
+    list-style-type: none;
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 21px;
+    opacity: 0.55;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+figcaption {
+    padding-top: 75px;
+    padding-left: 23.43%;
+    font-size: 16px;
+    line-height: 150%;
+    color: #71870E;
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 60px;
+}
+
+.philosophy {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.font_green {
+    color: #71870E;
+}
+
+.font_important {
+    /* font-weight: bold; */
+    font-style: italic;
+    font-weight: 500;
+}
+
+.main_thought {
+    font-family: 'Ogg', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 107%;
+    color: #000000;
+
+}
+
+.philosophy_text_part {
+    display: flex;
+    flex-direction: column;
+}
+
+.float {
+    padding-top: 83px;
+    padding-right: 10.5%;
+    padding-left: 10.5%;
+}
+
+.text_block {
+    clear: both;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 175%;
+    color: #000000;
+    opacity: 0.85;
+
+    margin-top: 100px;
+    margin-left: 35.25%;
+}
+
+.text_block p {
+
+    margin-top: 36px;
+}
+
+.text_block p:first-child {
+    margin-top: 0;
+}
+
+.button {
+
+    width: 225px;
+    height: 75px;
+    padding-top: 50px;
+    margin-top: 25px;
+    margin-left: 15.15%;
+
+}
+
+.button a {
+    color: #D0A049;
+    font-size: 16px;
+    display: flex;
+}
+
+.button_line {
+    margin-right: 30px;
+}
+
+.groupe_img {
+    padding-right: 139px;
+    padding-left: 37px;
+    position: relative;
+}
+
+.small_img {
+    position: absolute;
+    left: 59.5%;
+    top: 32.8%;
+}
+
+.mobile {
+    display: none;
+}
+
+#header {
+    float: left;
+    margin-right: 12px;
+    padding-top: 4px;
+    font-weight: 300;
+    /* ? */
+}
+
+
+@media screen and (max-width: 1350px) {
+    .philosophy {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .philosophy {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .philosophy_text_part {
+        padding: 25px 3.12%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .float {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .main_thought {
+        font-size: 40px;
+    }
+
+    .font_important {
+        font-weight: normal;
+    }
+
+    .text_block {
+        margin-top: 25px;
+        margin-left: 0;
+
+    }
+
+
+    .button {
+        align-self: flex-end;
+        margin-top: 0;
+
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+
+    .groupe_img {
+        align-self: center;
+        padding: 0;
+    }
+
+    .small_img {
+        top: 278px;
+        left: 132px;
+
+    }
+
+    #header {
+        display: none;
+    }
+
+}
